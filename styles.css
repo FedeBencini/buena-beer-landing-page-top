@@ -1,3 +1,16 @@
+/* General */
+body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+/* Header */
+.header {
+  display: flex;
+}
+
+/* Products */
 #every-beer {
   width: 400px;
 }
@@ -5,3 +18,9 @@
 .beer {
   width: 200px;
 }
+
+/* Review */
+
+/* Newsletter */
+
+/* Footer */
