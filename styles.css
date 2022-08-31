@@ -239,6 +239,10 @@ h1:hover {
   gap: 12px;
 }
 
+.signup > label {
+  align-self: center;
+}
+
 #mail {
   height: 24px;
   width: 250px;
