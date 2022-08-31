@@ -8,9 +8,12 @@ body {
 }
 
 header,
-section,
 footer {
   padding: 16px;
+}
+
+section {
+  padding: 32px;
 }
 
 .header,
@@ -173,7 +176,8 @@ h1:hover {
 
 .reviews {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   background-color: #e5e7eb;
 }
@@ -181,6 +185,19 @@ h1:hover {
 .review {
   max-width: 500px;
   color: #1f2937;
+  padding: 24px;
+}
+
+.arrow {
+  font-size: 48px;
+  color: #1f2937;
+}
+
+.arrow:hover {
+  cursor: pointer;
+  transform: translate(0px, -2px);
+  color: #c0972e;
+  transition: 0.3s;
 }
 
 .review > q {
