@@ -1,19 +1,129 @@
 /* General */
+
 body {
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header,
+section,
+footer {
+  padding: 16px;
+}
+
+.header,
+.about {
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+
+.button {
+  border-radius: 8px;
+  padding: 8px;
 }
 
 /* Header */
 .header {
   display: flex;
+  align-items: center;
+  height: 100px;
 }
 
-/* Products */
+.logo {
+  margin-right: auto;
+}
+
+.logo > img {
+  max-width: 85px;
+}
+
+.nav {
+  margin-right: 16px;
+}
+
+.nav > ul {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 400;
+  border-radius: 16px;
+}
+
+a:hover {
+  background: #f9faf8;
+  color: #1f2937;
+  transition: 0.5s;
+}
+
+/* About */
+.about {
+  display: flex;
+  justify-content: center;
+  padding: 16px 64px;
+  min-height: 320px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+h1:hover {
+  text-decoration: underline;
+  color: #c0972e;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+#about-text {
+  margin-right: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#about-img {
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+}
+
+#about-text,
+#about-img {
+  max-width: 600px;
+}
+
+.button.product {
+  background-color: #f9faf8;
+  color: #1f2937;
+  font-weight: 700;
+  letter-spacing: 0.85px;
+}
+
+.button.product:hover {
+  cursor: pointer;
+  background-color: #c0972e;
+  color: white;
+  transition: 0.35s;
+}
+
 #every-beer {
   width: 400px;
 }
+
+/* Products */
 
 .beer {
   width: 200px;
