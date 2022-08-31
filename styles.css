@@ -25,6 +25,17 @@ section {
 .button {
   border-radius: 8px;
   padding: 8px;
+  background-color: #f9faf8;
+  color: #1f2937;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #c0972e;
+  color: white;
+  transition: 0.35s;
 }
 
 /* Header */
@@ -108,25 +119,29 @@ h1:hover {
   max-width: 600px;
 }
 
-.button.product {
-  background-color: #f9faf8;
-  color: #1f2937;
-  font-weight: 700;
-  letter-spacing: 0.85px;
-}
-
-.button.product:hover {
-  cursor: pointer;
-  background-color: #c0972e;
-  color: white;
-  transition: 0.35s;
-}
-
 #every-beer {
   width: 400px;
 }
 
 /* Products */
+
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.products > h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.beers {
+  display: flex;
+  gap: 48px;
+}
 
 .beer-img {
   width: 200px;
@@ -152,24 +167,6 @@ h1:hover {
   cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 4px;
-}
-
-.products {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.products > h2 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #1f2937;
-}
-
-.beers {
-  display: flex;
-  gap: 48px;
 }
 
 /* Reviews */
@@ -213,5 +210,44 @@ h1:hover {
 }
 
 /* Newsletter */
+.newsletter,
+.invite,
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter {
+  height: 200px;
+}
+
+.invite {
+  background-color: #3882f6;
+  padding: 52px;
+  border-radius: 16px;
+  gap: 48px;
+  color: #e5e7eb;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.signup {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+#mail {
+  height: 24px;
+  width: 250px;
+  border-radius: 8px;
+  border: 2px solid #1f2937;
+}
+
+#mail:hover {
+  border: 2px solid #c0972e;
+  transition: 0.25;
+}
 
 /* Footer */
