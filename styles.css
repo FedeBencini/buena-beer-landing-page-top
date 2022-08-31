@@ -125,8 +125,48 @@ h1:hover {
 
 /* Products */
 
-.beer {
+.beer-img {
   width: 200px;
+  border-radius: 16px;
+  border: 4px solid #3882f6;
+}
+
+.beer-img:hover {
+  cursor: pointer;
+  transform: translate(0px, -2px);
+  filter: blur(2px);
+  transition: 0.25s;
+}
+
+.beer > p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #1f2937;
+}
+
+.beer:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.products > h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.beers {
+  display: flex;
+  gap: 48px;
 }
 
 /* Review */
