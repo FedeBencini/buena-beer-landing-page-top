@@ -169,7 +169,31 @@ h1:hover {
   gap: 48px;
 }
 
-/* Review */
+/* Reviews */
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e7eb;
+}
+
+.review {
+  max-width: 500px;
+  color: #1f2937;
+}
+
+.review > q {
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.signature {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: end;
+}
 
 /* Newsletter */
 
